@@ -23,19 +23,17 @@ pub fn desenhar_retangulo(
         cor: Color, 
         x: i32, 
         y:i32, 
-        altura:i32, 
         largura:i32, 
+        altura:i32, 
         ctxt: &Context, 
         g: &mut G2d
     ) {
     let rect_x = to_coord(x);
     let rect_y = to_coord(y);
-    let rect_altura = to_coord(altura);
-    let rect_largura = to_coord(largura);
 
     rectangle(
         cor, 
-        [rect_x, rect_y, rect_altura, rect_largura], 
+        [rect_x, rect_y, TAM_BLOCO * (largura as f64), TAM_BLOCO * (altura as f64)], 
         ctxt.transform, 
         g
     );
