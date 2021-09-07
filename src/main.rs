@@ -9,7 +9,7 @@ use piston_window::*;
 use piston_window::types::Color;
 
 use jogo::Jogo;
-use desenhar::to_coord_u32;
+use crate::desenhar::to_coord_u32;
 
 const BG_COLOR: Color = [0.50, 0.50, 0.50, 1.0];
 
